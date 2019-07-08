@@ -1,0 +1,50 @@
+$player1Color: rgb(29, 159, 202);
+$player2Color: rgb(223, 88, 35);
+
+.player-section {
+  height: 100vh;
+  border-color: 3px black;
+  &.player--1 {
+    background-color: $player1Color;
+    box-shadow: inset 0 0 1em #005ab6;
+  }
+  &.player--2 {
+    background-color: $player2Color;
+    box-shadow: inset 0 0 1em #ad2909;
+  }
+}
+.content {
+  margin-top: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.moves {
+  display: flex;
+  margin: 20px;
+  transition: all 1s ease-in-out;
+
+  &.move--chosen {
+    opacity: 0;
+  }
+
+  .moves__item {
+    width: 100px;
+    height: 100px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &.item--selected {
+      filter: invert(80%);
+      transform: scale(1.2);
+    }
+  }
+}
+
+.player-name {
+  text-transform: capitalize;
+  font-size: 5rem;
+  font-weight: bolder;
+}
