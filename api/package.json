@@ -33,7 +33,7 @@
     "express-validator": "6.1.1",
     "jest": "24.8.0",
     "lodash": "4.17.11",
-    "mongoose": "^5.6.3",
+    "mongoose": "^5.7.5",
     "nodemon": "1.19.1",
     "sinon": "7.3.2",
     "supertest": "4.0.2",
